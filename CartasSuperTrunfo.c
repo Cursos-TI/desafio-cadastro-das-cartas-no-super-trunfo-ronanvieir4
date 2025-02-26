@@ -14,7 +14,7 @@ Número de pontos turísticos - int
 int main() {
     // Variáveis nomeadas com o número 1 serão usadas para a primeira carta e 2 para a segunda
     char estado1, estado2;
-    char codigo_carta1[3], codigo_carta2[3], nome_cidade1[20], nome_cidade2[20];
+    char codigo_carta1[4], codigo_carta2[4], nome_cidade1[20], nome_cidade2[20];
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2;
 
@@ -23,7 +23,8 @@ int main() {
     printf("Letra de 'A' a 'H' para representar o Estado: ");
     scanf(" %c", &estado1);
     printf("A letra do Estado seguida de um número de 01 a 04: ");
-    scanf("%s", codigo_carta1);
+    scanf("%3s", codigo_carta1);
+    getchar();
     printf("Nome da cidade: ");
     scanf(" %[^\n]", nome_cidade1);
     printf("O número de habitantes da cidade: ");
@@ -42,11 +43,12 @@ int main() {
     printf("Letra de 'A' a 'H' para representar o Estado: ");
     scanf(" %c", &estado2);
     printf("A letra do Estado seguida de um número de 01 a 04: ");
-    scanf("%s", codigo_carta2);
+    scanf("%3s", codigo_carta2);
+    getchar();
     printf("Nome da cidade: ");
     scanf(" %[^\n]", nome_cidade2);
     printf("O número de habitantes da cidade: ");
-    scanf(" %d", &populacao2);
+    scanf("%d", &populacao2);
     printf("A área da cidade em quilômetros quadrados: ");
     scanf("%f", &area2);
     printf("O Produto Interno Bruto da cidade: ");
