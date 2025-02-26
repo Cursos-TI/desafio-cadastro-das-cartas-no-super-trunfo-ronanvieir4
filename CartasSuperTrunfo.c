@@ -1,16 +1,5 @@
 #include <stdio.h>
 
-/*
-Variáveis e tipos:
-Estado de 'A' a 'H' - char
-Código da carta de 01 a 04 (ex: A01, B03) - char[]
-Nome da cidade - char[]
-População - int
-Área - float
-PIB - float
-Número de pontos turísticos - int 
-*/
-
 int main() {
     // Variáveis nomeadas com o número 1 serão usadas para a primeira carta e 2 para a segunda
     char estado1, estado2;
