@@ -85,5 +85,13 @@ int main() {
     pib_per_capita2 = (pib2 * 1e9) / populacao2;
     printf("PIB per Capita: %.2lf reais\n", pib_per_capita2);
 
+    printf("\n");
+
+    //Batalha das cartas
+    float superPoder1 = populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1 - densidade_populacional1;
+    float superPoder2 = populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 - densidade_populacional2;
+
+    
+
     return 0;
 }
